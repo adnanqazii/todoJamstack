@@ -1,0 +1,12 @@
+{
+  "name": "todoJamstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adnanqazii/todoJamstack.git",
+  "author": "Adnan <adnanqazi123@gmail.com>",
+  "license": "MIT",
+  "private":true,
+  "workspaces":[
+    "packages/*"
+  ]
+}

@@ -28,6 +28,7 @@ const resolvers = {
       if (!user) {
         return [];
       } else {
+          console.log(user)
         const results = await client.query(
           q.Paginate(q.Match(q.Index("todos_by_user"), user))
         );

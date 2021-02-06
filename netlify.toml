@@ -1,4 +1,0 @@
-[build]
-    command ="yarn workspace www build && cd functions/graphql && yarn"
-    publish ="packages/www/public"
-    functions="functions"

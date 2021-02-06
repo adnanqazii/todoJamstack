@@ -86,9 +86,14 @@ export default () => {
         as="form"
         onSubmit={async e => {
           e.preventDefault();
-          await addTodo({ variables: { text: inputRef.current.value } });
-          inputRef.current.value = "";
-          await refetch();
+          try {
+            await addTodo({ variables: { text: inputRef.current.value } });
+            inputRef.current.value = "";
+            await refetch();
+          }
+        catch(err) {
+          console.log("error ",error)
+        }
         }}
       >
         <Label sx={{ display: "flex" }}>

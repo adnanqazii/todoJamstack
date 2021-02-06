@@ -27,6 +27,7 @@ const todosReducer = (state, action) => {
 };
 
 export default () => {
+
   const { user, identity: netlifyIdentity } = useContext(IdentityContext);
   const [todos, dispatch] = useReducer(todosReducer, []);
   const inputRef = useRef();

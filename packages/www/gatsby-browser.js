@@ -1,6 +1,7 @@
 const React = require("react");
 
 const { setContext } = require("apollo-link-context");
+const netlifyIdentity = require("netlify-identity-widget");
 const {
   ApolloProvider,
   ApolloClient,

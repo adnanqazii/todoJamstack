@@ -5,8 +5,11 @@
   "repository": "https://github.com/adnanqazii/todoJamstack.git",
   "author": "Adnan <adnanqazi123@gmail.com>",
   "license": "MIT",
-  "private":true,
-  "workspaces":[
+  "private": true,
+  "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@apollo/client": "^3.3.8"
+  }
 }

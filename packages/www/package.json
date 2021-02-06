@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@theme-ui/presets": "^0.3.0",
+    "apollo-link-context": "^1.0.20",
     "gatsby": "^2.19.12",
     "gatsby-plugin-create-client-paths": "^2.1.22",
     "netlify-identity-widget": "^1.5.6",

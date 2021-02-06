@@ -46,7 +46,7 @@ const resolvers = {
         throw new Error("Must be authenticated to insert todos");
       }
       const results = await client.query(
-        q.Create(q.Collection("todos"), {
+        q.Create(q.Collection("all_todos"), {
           data: {
             text,
             done: false,
@@ -64,7 +64,7 @@ const resolvers = {
         throw new Error("Must be authenticated to insert todos");
       }
       const results = await client.query(
-        q.Update(q.Ref(q.Collection("todos"), id), {
+        q.Update(q.Ref(q.Collection("all_todos"), id), {
           data: {
             done: true
           }

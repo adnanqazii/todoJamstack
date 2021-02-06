@@ -1,4 +1,0 @@
-[build]
-    functions="functions"
-    command="gatsby develop"
-    publish="public"

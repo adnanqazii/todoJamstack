@@ -12,6 +12,7 @@ const wrapRootElement = require("./wrap-root-element");
 const authLink = setContext((_, { headers }) => {
     const user = netlifyIdentity.currentUser();
     const token = user.token.access_token;
+    console.log(token)
     // return the headers to the context so httpLink can read them
     return {
       headers: {
